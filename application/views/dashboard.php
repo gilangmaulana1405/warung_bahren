@@ -47,7 +47,7 @@
                         </div> -->
 
                         <a href="<?= base_url('dashboard/tambah_ke_keranjang/' . $brg->id_brg) ?>">
-                            <button type="button" class="tambah_keranjang btn btn-lg btn-primary btn-sm" data-id_barang="<?= $brg->id_brg; ?>" data-nama_barang="<?= $brg->nama_brg; ?>" data-harga_barang="<?= $brg->harga; ?>">Tambah Ke Keranjang</button>
+                            <button type="button" id="button" class="tambah_keranjang btn btn-lg btn-primary btn-sm" data-id_barang="<?= $brg->id_brg; ?>" data-nama_barang="<?= $brg->nama_brg; ?>" data-harga_barang="<?= $brg->harga; ?>">Tambah Ke Keranjang</button>
                         </a>
 
                     <?php } ?>

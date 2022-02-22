@@ -116,9 +116,18 @@
                                     <a href="<?= base_url('dashboard/detail_keranjang') ?>" class="nav-link" id="detail_cart" role="button" aria-haspopup="true" aria-expanded="false">
                                         <i class="fas fa-shopping-cart fa-fw fa-lg"><?php $keranjang =  $this->cart->total_items()  ?></i>
 
-                                        <span class="badge badge-danger badge-counter"><?php echo $keranjang ?></span>
+                                        <!-- jika ada data yang dikirimkan tampilkan notif -->
+                                        <!-- jika tidak ada data dikirimkan, maka notif tidak muncul -->
+                                        <?php if ($keranjang > 0) {
+                                            echo '<span class="badge badge-danger badge-counter">' . $keranjang . '</span>';
+                                        }else{
+                                            echo '<span style="display:none;" class="badge badge-danger badge-counter">0</span>';
+                                        } 
+                                        
+                                        ?>
                                     </a>
                                 </li>
+
 
                             </ul>
                         </div>

@@ -1,8 +1,6 @@
-
 function confirmDialog() {
- return confirm('Apakah anda yakin akan menghapus data barang ini?');
+	return confirm('Apakah anda yakin akan menghapus data barang ini?');
 }
-
 
 // $(document).ready(function() {
 //     $('.tambah_keranjang').click(function() {
@@ -28,6 +26,3 @@ function confirmDialog() {
 //     });
 
 // });
-
-
-
